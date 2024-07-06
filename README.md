@@ -1,9 +1,6 @@
-# Course-Project-1(landing-page)
+# Portfolio for Web Developer:
 
-This the first landing page that designed after enrolling course which is a restaurent landing page. In this site have five section named: hero, about, card, social-site link, single-card. I have learned by this project how to design a site from figma file in pixel perfect way.
+This is the second landing page design during the course which is a portfolio website. This site is also from figma file.
 
 ## New for me:
 
-### 1. Figma file.
-### 2. Raw css code without framework.
-### 3. New UI.
