@@ -7,6 +7,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.hide{
+  display: none;
+}
+
 /*shared class*/
 .bg-sacondary{
   background: #FFF8F3;
@@ -64,6 +68,31 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 576px) {
+  .section-head{
+    font-size: 28px;
+  }
+
+  .section-descrip{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+
+  .btn {
+    padding: 7px 13px;
+    font-size: 12px;
+  }
+
+  .btn-secondary{
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  
+}
+
 /*header css backgrount*/
 header{
   background: url("../images/developer.png"), url("../images/header_bg.png");
@@ -71,6 +100,13 @@ header{
   background-position: left top, right bottom;
   background-size: contain;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  header{
+    background: none;
+    margin: 0 20px;
+  }
 }
 
 
@@ -99,6 +135,23 @@ nav ul li a {
   font-size: 16px;
 }
 
+
+@media screen and (max-width: 576px) {
+  
+  nav{
+    margin: 10px 0;
+  }
+
+  nav h3 {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+nav ul {
+  gap: 20px;
+}
+}
+
 /*hero css strt*/
 .hero  {
   margin: 0 30px 0 190px;
@@ -118,7 +171,7 @@ nav ul li a {
 
 .hero .hero-text h1 {
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .hero .hero-text p{
@@ -138,6 +191,45 @@ nav ul li a {
   
 }
 
+@media screen and (max-width: 576px) {
+  .hero{
+    margin: 30px 0 50px 0;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .hero .hero-text {
+    width: 100%;
+  }
+
+  .hero .hero-text h4{
+    font-size: 25px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero .hero-text p{
+    font-size: 12px;
+    margin: 10px 0 15px 0;
+  }
+
+  .hero .hero-text .cta-btn{
+    gap: 20px;
+  }
+
+
+  .hero-img{
+    width: 80%;
+  }
+
+  .hero-img img{
+    width: 100% !important;
+  }
+  
+}
+
 /*main css*/
 
 main{
@@ -148,6 +240,15 @@ main section{
   margin-bottom: 110px;
 }
 
+@media screen and (max-width:576px) {
+  main{
+    margin: 0 20px;
+  }
+
+  main section{
+    margin-bottom: 50px;
+  }
+}
 
 /*about css */
 .about .container{
@@ -191,6 +292,33 @@ main section{
   font-weight: bold;
 }
 
+
+@media screen and (max-width:576px) {
+  .about .container{
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+
+  .about .container .about-inner {
+    width: 100%;
+    gap: 15px;
+}
+
+.about .container .about-inner .about-details {
+  text-align: justify;
+  text-align-last: center;
+  padding: 0 10px;
+}
+
+.about-items {
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+}
 /*skills css*/
 
 .skills .heading{
@@ -226,6 +354,33 @@ main section{
   font-size: 13px !important;
 }
 
+
+@media screen and (max-width:576px) {
+  .skills .heading {
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.skills .heading h2 {
+  margin-bottom: 15px;
+}
+
+.skills .heading> p{
+  text-align: justify;
+  text-align-last: center;
+}
+
+  
+.skills .skills-items {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills .skills-items .item h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+}
 /*resume css*/
 
 .resume .heading{
@@ -266,6 +421,32 @@ main section{
 .resume .resume-inner{
   margin-bottom: 42px;
   
+}
+
+@media screen and (max-width: 576px) {
+  .resume .heading {
+    margin-bottom: 25px;
+}
+
+.resume .resume-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.resume .resume-inner .title {
+  margin-bottom: 25px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.resume .resume-inner .resume-details h4 {
+  font-size: 18px;
+}
+.resume .resume-inner .resume-details h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 }
 
 /*footer css*/
@@ -316,4 +497,31 @@ footer .footer-column form input[type="text"], footer .footer-column form input[
 
 footer .footer-column form input[type="submit"] {
   width: fit-content;
+}
+
+
+@media screen and (max-width:576px) {
+  footer{
+    margin-top: 50px;
+    padding: 0 20px;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+  }
+
+  footer .footer-column {
+    width: 100%;
+  }
+
+  footer .footer-column form{
+    row-gap: 10px;
+  }
+
+  footer .footer-column form input[type="text"], 
+  footer .footer-column form input[type="email"], 
+  footer .footer-column form textarea {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+  
 }
