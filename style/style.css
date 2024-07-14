@@ -68,6 +68,27 @@
   font-weight: bold;
 }
 
+@media screen and (min-width:577px) and (max-width:992px) {
+  .section-head{
+    font-size: 36px;
+  }
+
+  .section-descrip{
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+
+  .btn-secondary{
+    font-size: 16px;
+    padding: 11px 21px;
+  }
+
+}
+
 @media screen and (max-width: 576px) {
   .section-head{
     font-size: 28px;
@@ -110,6 +131,17 @@ header{
 }
 
 
+@media screen and (min-width:577px) and (max-width:992px){
+  header{
+    background: url("../images/developer.png"), url("../images/header_bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right bottom;
+    background-size: auto 90%, 60% auto;
+    margin-left: 20px;
+  }
+}
+
+
 /*Nav css start*/
 nav{
   display: flex;
@@ -133,6 +165,17 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-size: 16px;
+}
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+  nav{
+    margin: 30px 40px;
+  }
+
+  nav h3 {
+    font-size: 27px;
+    font-weight: 800;
+  }
 }
 
 
@@ -191,6 +234,39 @@ nav ul {
   
 }
 
+@media screen and (min-width:577px) and (max-width: 992px){
+  .hero  {
+    margin: 0 30px 0 40px;
+  }
+
+  .hero .hero-text {
+    width: 50%;
+  }
+
+  .hero .hero-text h4{
+    font-size: 27px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero .hero-text p{
+    font-size: 16px;
+    margin: 10px 0 25px 0;
+  }
+
+  .hero .hero-img{
+    width: 50%;
+    text-align: right;
+  }
+
+  .hero .hero-img img{
+    width: 80%;
+    margin-bottom: -5px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .hero{
     margin: 30px 0 50px 0;
@@ -238,6 +314,16 @@ main{
 
 main section{
   margin-bottom: 110px;
+}
+
+@media screen and (min-width:557px) and (max-width:992px) {
+  main{
+    margin: 80px 60px;
+  }
+
+  main section{
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -292,6 +378,38 @@ main section{
   font-weight: bold;
 }
 
+@media screen and (min-width:576px) and (max-width:992px){
+  .about .container{
+    width: 100%;
+    padding: 60px 80px;
+  }
+
+  .about .container .about-inner {
+    width: 100%;
+    gap: 25px;
+    padding: 10px;
+}
+
+.about .container .about-inner .about-details{
+  text-align: justify;
+  text-align-last: center;
+  font-size: 16px;
+}
+
+  .about-items{
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 20px;
+  }
+
+  .about-items .about-item h5 {
+    font-size: 18px;
+  }
+  .about-items .about-item h4{
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width:576px) {
   .about .container{
@@ -354,6 +472,43 @@ main section{
   font-size: 13px !important;
 }
 
+@media screen and (min-width:576px) and (max-width:992px){
+  .skills .heading{
+    padding: 0 20px;
+    margin-bottom: 45px;
+  }
+
+  .skills .heading h2 {
+    margin-bottom: 15px;
+  }
+
+  .skills .heading p{
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .skills .skills-items{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+  }
+
+  .skills .skills-items .item{
+    width: calc(50% - 25px);
+    border-radius: 10px;
+  }
+
+  .skills .skills-items .item h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+  .skills .skills-items .item p {
+    font-size: 16px !important;
+  }
+}
 
 @media screen and (max-width:576px) {
   .skills .heading {
@@ -422,6 +577,32 @@ main section{
   margin-bottom: 42px;
   
 }
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .resume .heading {
+    margin-bottom: 40px;
+  }
+
+  .resume .resume-inner .title {
+    font-size: 28px;  
+  }
+
+  .resume .resume-inner .resume-details h4 {
+    font-size: 20px;
+  }
+
+  .resume .resume-inner .resume-details h5 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .resume .resume-inner .resume-details p {
+    padding-right: 10px;
+  }
+}
+
 
 @media screen and (max-width: 576px) {
   .resume .heading {
@@ -497,6 +678,26 @@ footer .footer-column form input[type="text"], footer .footer-column form input[
 
 footer .footer-column form input[type="submit"] {
   width: fit-content;
+}
+
+
+@media screen and (min-width:577px) and (max-width:992px) {
+  footer{
+    margin-top: 80px;
+    padding: 50px 80px;
+    display: flex;
+    column-gap: 40px;
+  }
+
+  footer .footer-column h2 {
+    margin-bottom: 10px;
+  } 
+
+  footer .footer-column p{
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-right: 30px;
+  }
 }
 
 
