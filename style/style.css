@@ -704,11 +704,11 @@ footer .footer-column form input[type="submit"] {
 @media screen and (max-width:576px) {
   footer{
     margin-top: 50px;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     row-gap: 30px;
     flex-direction: column;
-    margin-bottom: 20px;
+    
   }
 
   footer .footer-column {

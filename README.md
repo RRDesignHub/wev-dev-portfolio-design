@@ -1,6 +1,7 @@
 # Portfolio for Web Developer:
 
 This is the second landing page design during the course which is a portfolio website. This site is also from figma file.
+Responsive for small, medium and large device screen.
 
 ## Sections:
 ### Banner/ Hero.
